@@ -1,0 +1,7 @@
+<h1>Da BuzzFact: <%= @buzz_fact.title %></h1>
+<p><%= @buzz_fact.content %></p>
+<p>Likes: <%= @buzz_fact.likes.count %></p>
+
+
+<%= link_to 'Like', buzz_fact_likes_path(@buzz_fact), method: 'post', class: 'btn btn-success' %>
+

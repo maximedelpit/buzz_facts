@@ -1,0 +1,6 @@
+<h1>Create your new buzz fact</h1>
+<%= simple_form_for @buzz_fact do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+    <%= f.submit 'Create' %>
+<% end %>
